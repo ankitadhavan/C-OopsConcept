@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8CDFB99-D0B4-4330-AF14-03D2E9C78EE7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>classesnobject</RootNamespace>
+    <AssemblyName>classesnobject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstarction\Abstraction.cs" />
+    <Compile Include="Abstarction\AbstractionClass.cs" />
+    <Compile Include="Abstarction\AbstractStudent.cs" />
+    <Compile Include="Abstarction\AbstractTeacher.cs" />
+    <Compile Include="Anonymous\AnonymousFunction.cs" />
+    <Compile Include="Anonymous\ParameterAnonymous.cs" />
+    <Compile Include="ClassNObject1\ObjectClass.cs" />
+    <Compile Include="Constructor.cs" />
+    <Compile Include="DelegateClass\Delegates.cs" />
+    <Compile Include="DelegateClass\MultiCastDelegates.cs" />
+    <Compile Include="DelegateClass\MultipleDelegates.cs" />
+    <Compile Include="DelegateClass\SingleCastDelegates.cs" />
+    <Compile Include="Encapsulations\Encap.cs" />
+    <Compile Include="Generics\Generic.cs" />
+    <Compile Include="Generics\GenericClass1.cs" />
+    <Compile Include="Index\Indexerclass.cs" />
+    <Compile Include="Inheritance\BGrandFather.cs" />
+    <Compile Include="Inheritance\DChildren.cs" />
+    <Compile Include="Inheritance\DParent.cs" />
+    <Compile Include="Inheritance\MultipleInheritance\MBase.cs" />
+    <Compile Include="Inheritance\MultipleInheritance\MDerived.cs" />
+    <Compile Include="Inheritance\MultipleInheritance\Intermediate.cs" />
+    <Compile Include="Inheritance\SingleInheritance\Base.cs" />
+    <Compile Include="Inheritance\SingleInheritance\Derived.cs" />
+    <Compile Include="Interface\InterfaceClass.cs" />
+    <Compile Include="Interface\InterfaceInheritance\InInheritanceCls.cs" />
+    <Compile Include="Interface\InterfaceInheritance\Interface1.cs" />
+    <Compile Include="Interface\InterfaceInheritance\Interface2.cs" />
+    <Compile Include="Interface\InterfaceInheritance\Interface3.cs" />
+    <Compile Include="Interface\Interfaces.cs" />
+    <Compile Include="Polymorphism\DynamicPolymorphism\MethodHiding.cs" />
+    <Compile Include="Polymorphism\DynamicPolymorphism\MethodOverriding\BaseClass.cs" />
+    <Compile Include="Polymorphism\DynamicPolymorphism\MethodOverriding\BClass.cs" />
+    <Compile Include="Polymorphism\DynamicPolymorphism\MethodOverriding\CClass1.cs" />
+    <Compile Include="Polymorphism\DynamicPolymorphism\MHChild.cs" />
+    <Compile Include="Polymorphism\StaticPolymorphism\MethodOverloading.cs" />
+    <Compile Include="Polymorphism\StaticPolymorphism\OperatorOverloading.cs" />
+    <Compile Include="Sealed\SealedBase.cs" />
+    <Compile Include="Sealed\SealedDerived.cs" />
+    <Compile Include="StaticClass.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
